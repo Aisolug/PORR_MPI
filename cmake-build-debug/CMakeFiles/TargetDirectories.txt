@@ -1,0 +1,3 @@
+/home/aisolug/Pulpit/porr2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/aisolug/Pulpit/porr2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/aisolug/Pulpit/porr2/cmake-build-debug/CMakeFiles/porr2.dir

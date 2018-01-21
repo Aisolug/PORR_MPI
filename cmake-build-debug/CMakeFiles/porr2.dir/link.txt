@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/porr2.dir/jacobi.c.o CMakeFiles/porr2.dir/main.c.o CMakeFiles/porr2.dir/richardson.c.o CMakeFiles/porr2.dir/testFun.c.o  -o porr2 -Wl,-rpath,/usr/local/lib -lm /usr/local/lib/libmpichcxx.so /usr/local/lib/libmpich.a /usr/local/lib/libopa.so /usr/local/lib/libmpl.so /usr/lib/x86_64-linux-gnu/librt.so -lpthread 

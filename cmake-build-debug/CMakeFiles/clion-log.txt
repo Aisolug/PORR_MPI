@@ -1,0 +1,6 @@
+/home/aisolug/Pobrane/clion-2017.3.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/aisolug/Pulpit/porr2
+-- Found MPI_C: /usr/local/lib/libmpich.a;/usr/local/lib/libopa.so;/usr/local/lib/libmpl.so;/usr/lib/x86_64-linux-gnu/librt.so;/usr/lib/x86_64-linux-gnu/libpthread.so  
+-- Found MPI_CXX: /usr/local/lib/libmpichcxx.so;/usr/local/lib/libmpich.a;/usr/local/lib/libopa.so;/usr/local/lib/libmpl.so;/usr/lib/x86_64-linux-gnu/librt.so;/usr/lib/x86_64-linux-gnu/libpthread.so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/aisolug/Pulpit/porr2/cmake-build-debug
