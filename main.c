@@ -103,7 +103,6 @@ int main(int argc, char* argv[]) {
                     free(jacobi.fun);
                     break;
                 }
-                    //printf("Wykonane iteracje dla Jacobiego: %d, rank %d\n", loop, rank);
             }
 
             int p;
