@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
             printf("\n for Jacobi write: jacobi\n");
             printf(" for Richardson write: richardson\n\n");
         }
-    } /*else if (strcmp("jacobi", algorithm) == 0) {
+    } else if (strcmp("jacobi", algorithm) == 0) {
 
         double *jacobian;
         jacobi.fun = (double *) calloc(jacobi.size, sizeof(double));
@@ -116,7 +116,7 @@ int main(int argc, char* argv[]) {
             msec_jacobi = diff_jacobi * 1000 / CLOCKS_PER_SEC;
             printf("\nCzas wykonania dla Jacobiego: %d\n", msec_jacobi % 1000);
         }
-    }*/
+    }
     else if (strcmp("richardson", algorithm) == 0) {
 
         double* richardson;
@@ -139,12 +139,9 @@ int main(int argc, char* argv[]) {
                 for (i = rank * count; iter < count && out == 0; i++, iter++) {
                     abs[iter] = fabs(richardson[i] - prev[i]);
                     if (abs[iter] > precision_rich) out = 1;
-                    printf("rank %d, loop %d\n", rank, loop);
                 }
                 MPI_Allreduce(&out, &sum, 1, MPI_INT, MPI_SUM, MPI_COMM_WORLD);
-                printf("sum, %d\n", sum);
                 if (sum == 0) {
-                    printf("Wykonane iteracje dla Richardsona: %d, rank %d\n", loop, rank);
                     free(rich.fun);
                     break;
                 }
